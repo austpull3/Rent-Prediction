@@ -25,7 +25,7 @@ from sklearn.feature_selection import RFE
 from sklearn.linear_model import LinearRegression
 from scipy import stats, linalg
 
-import streamlit as st 
+import streamlit as st  
 import os
 import pandas as pd
 import seaborn as sns 
