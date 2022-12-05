@@ -806,7 +806,7 @@ def page7():
     
     df['bed_bath_total'] = df.apply(lambda x: x['beds'] + x['baths'], axis = 1)
     
-    X = df.drop(["price", 'long', 'lat','sqfeet', 'cats_allowed', 'beds', 'baths', ], axis=1) #independent variables
+    X = df.drop(["price", 'sqfeet', 'cats_allowed', 'beds', 'baths', ], axis=1) #independent variables
     y = df["price"] #target variable
     y = np.log(y)
     #Split the data
