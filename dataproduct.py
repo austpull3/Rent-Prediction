@@ -43,7 +43,7 @@ THEMES = [
 
 # Show thumbnails for available themes.
 # As html img tags here, so we can add links on them.
-cols = st.beta_columns(len(THEMES))
+cols = st.columns(len(THEMES))
 for col, theme in zip(cols, THEMES):
 
     # Get repo name for this theme (to link to correct deployed app)-
