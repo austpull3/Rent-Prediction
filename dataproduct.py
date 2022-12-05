@@ -30,7 +30,7 @@ import os
 import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
-st.set_page_config(layout="wide", page_icon=":art:", page_title="Rent Prediction")
+st.set_page_config(layout="wide", page_icon=":house:", page_title="Rent Prediction")
 st.write("Streamlit version", st.__version__)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
@@ -97,21 +97,7 @@ def main_page():
 
     st.markdown("# ENJOY!")
     st.sidebar.markdown("# Welcome!🎈❄️")
-    
-    st.sidebar.write("Use the widgets to alter the graphs:")
-    chck = st.sidebar.checkbox("Use your theme colours on graphs", value=True) # get colours for graphs
-
-        # get colors from theme config file, or set the colours to altair standards
-    if chck:
-        primary_clr = st.get_option("theme.primaryColor")
-        txt_clr = st.get_option("theme.textColor")
-        # I want 3 colours to graph, so this is a red that matches the theme:
-        second_clr = "#d87c7c"
-    else:
-        primary_clr = '#4c78a8'
-        second_clr = '#f58517'
-        txt_clr = '#e45756'
-
+ 
 def page2():
     st.markdown("# Importing Libraries and Loading Data ")
    
