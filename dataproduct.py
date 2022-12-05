@@ -298,7 +298,7 @@ df.isna().sum()
     
     if st.checkbox("Show Missing Values"):
         from PIL import Image 
-        image9 = Image.open('/Users/austinpullar/Desktop/missingvalues.png')
+        image9 = Image.open('missingvalues.png')
         st.image(image9)
     
     code = '''
@@ -312,14 +312,14 @@ df.isna().sum()
         '''
     st.code(code, language= 'python')
    
-    image10 = Image.open('/Users/austinpullar/Desktop/missingh.png')
+    image10 = Image.open('missingh.png')
     st.image(image10)
     
     st.markdown("## Finding and Handling Outliers")
     
     from PIL import Image 
     #st.sidebar.markdown("# Loading Data")
-    image30 = Image.open('/Users/austinpullar/Desktop/missingimage.png')
+    image30 = Image.open('missingimage.png')
     st.sidebar.image(image30)
     
     
