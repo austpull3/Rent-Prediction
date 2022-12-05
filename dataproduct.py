@@ -84,13 +84,13 @@ def main_page():
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('/Users/austinpullar/Desktop/Christmas2.webp')    
+    add_bg_from_local('Christmas2.webp')    
     
     st.markdown("# Welcome to the Rent Predictor 🏘🎄")
     st.markdown("### In the sidebar to the left there are several pages that can take you through the machine learning side of the predictor.")
     st.markdown("### If you wish to go straight to the predictor select that page.")
     from PIL import Image 
-    image1 = Image.open('/Users/austinpullar/Desktop/house3.jpeg')
+    image1 = Image.open('house3.jpeg')
     st.image(image1)
 
     st.markdown("# ENJOY!")
