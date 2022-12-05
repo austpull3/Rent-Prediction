@@ -105,7 +105,7 @@ def main_page():
 
     # get colors from theme config file, or set the colours to altair standards
     if chck:
-        primary_clr = st.get_option("theme.primaryColor")
+        primary_clr = st.get_option('#4c78a8')
         txt_clr = st.get_option("theme.textColor")
          # I want 3 colours to graph, so this is a red that matches the theme:
         second_clr = "#d87c7c"
