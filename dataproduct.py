@@ -158,6 +158,7 @@ def page2():
 
 def page3():
     st.markdown("# Exploratory Data Analysis") 
+    alt.value('#f63366')
     
     
     from PIL import Image 
