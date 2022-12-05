@@ -147,7 +147,7 @@ def page2():
     
     from PIL import Image 
     #st.sidebar.markdown("# Loading Data")
-    image28 = Image.open('/Users/austinpullar/Desktop/load.png')
+    image28 = Image.open('load.png')
     st.sidebar.image(image28)
 
 def page3():
@@ -156,7 +156,7 @@ def page3():
     
     from PIL import Image 
     #st.sidebar.markdown("# Loading Data")
-    image29 = Image.open('/Users/austinpullar/Desktop/eda.webp')
+    image29 = Image.open('eda.webp')
     st.sidebar.image(image29)
     
     df = pd.read_csv("USAHousing2.csv")
