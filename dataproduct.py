@@ -631,12 +631,12 @@ pred_graph_ran=pd.DataFrame({"True Value":y_train, "Predicted Value":pred2})
 pred_graph_ran.head()
 '''
           st.code(code, language = 'python')
-          image26= Image.open('/Users/austinpullar/Desktop/pred.png')
+          image26= Image.open('pred.png')
           st.image(image26)
 
           st.markdown("### Specific Prediction With Input") 
           st.write("Result converted back to original price scale")
-          image27= Image.open('/Users/austinpullar/Desktop/spred.png')
+          image27= Image.open('spred.png')
           st.image(image27)
           code = '''
 pp = p2.predict([[0,1,1,0,0,0,4,4,6,4]])
