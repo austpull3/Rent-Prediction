@@ -30,7 +30,7 @@ import os
 import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
-df = pd.read_csv("/Users/austinpullar/Desktop/USAHousing2.csv")
+df = pd.read_csv("USAHousing2.csv")
 import random
 random.seed(42)
 df = df.sample(frac = 0.80)
@@ -120,7 +120,7 @@ def page2():
     from sklearn.linear_model import LinearRegression
     
     #Read in the dataset into a dataframe
-    df = pd.read_csv("/Users/austinpullar/Desktop/USAHousing2.csv")
+    df = pd.read_csv("USAHousing2.csv")
     
     import random
     random.seed(42)
@@ -130,7 +130,7 @@ def page2():
     '''
     st.code(code, language= 'python')
     
-    df = pd.read_csv("/Users/austinpullar/Desktop/USAHousing2.csv")
+    df = pd.read_csv("USAHousing2.csv")
     
     import random
     random.seed(42)
@@ -161,7 +161,7 @@ def page3():
     image29 = Image.open('/Users/austinpullar/Desktop/eda.webp')
     st.sidebar.image(image29)
     
-    df = pd.read_csv("/Users/austinpullar/Desktop/USAHousing2.csv")
+    df = pd.read_csv("USAHousing2.csv")
     
     import random
     random.seed(42)
@@ -170,10 +170,10 @@ def page3():
     tab, tab2, tab3 = st.tabs([" Univariate Analysis ", " Variable Distribution/Rent Option Frequencies "," Variable Plots "])
      
     with tab: 
-        df = pd.read_csv("/Users/austinpullar/Desktop/USAHousing2.csv")
+        df = pd.read_csv("USAHousing2.csv")
         st.markdown("### Explore the dataset")
         #Display the first 10 rows of the data
-        df = pd.read_csv("/Users/austinpullar/Desktop/USAHousing2.csv")
+        df = pd.read_csv("USAHousing2.csv")
         
         data = st.selectbox('Select Dataset: ', ['USAHousing2.csv'])
         if  data == 'USAHousing2.csv':
@@ -322,7 +322,7 @@ df.isna().sum()
     st.sidebar.image(image30)
     
     
-    df = pd.read_csv("/Users/austinpullar/Desktop/USAHousing2.csv")
+    df = pd.read_csv("USAHousing2.csv")
     
     st.markdown("### Code for Boxplots of Outliers")    
     code = '''   
@@ -782,7 +782,7 @@ def page7():
     from sklearn.linear_model import LinearRegression
     
     #Read in the dataset into a dataframe
-    df = pd.read_csv("/Users/austinpullar/Desktop/USAHousing2.csv")
+    df = pd.read_csv("USAHousing2.csv")
     
     import random
     random.seed(42)
