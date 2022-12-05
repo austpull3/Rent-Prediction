@@ -325,6 +325,7 @@ df.isna().sum()
     
     df = pd.read_csv("USAHousing2.csv")
     
+    st.set_option('deprecation.showPyplotGlobalUse', False)
     st.markdown("### Code for Boxplots of Outliers")    
     code = '''   
 st.write(sns.boxplot(x = 'price', data = df))
