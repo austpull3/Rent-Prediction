@@ -952,6 +952,7 @@ def page7():
     if st.button('Predict Rent Price'):
         price = predict(htype, dogs, smoking, wheelchair, electric, furnished, bedbath, laundry, parking, state)
         st.write("Predicted Rent Price")
+        st.write("$", price)
         st.success(np.exp(price).astype(int))
         
     
