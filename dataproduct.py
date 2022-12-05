@@ -792,10 +792,6 @@ def page7():
     
     df=df[df["baths"]<= 3.5]
     
-    df= df[(df["lat"]< 55) & (df['lat'] > 20)]
-    
-    df= df[(df["long"]< -20) & (df['long'] > -110)]
-    
     
     from sklearn.preprocessing import LabelEncoder
     le=LabelEncoder()
