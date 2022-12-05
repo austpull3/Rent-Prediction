@@ -30,6 +30,9 @@ import os
 import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
+
+st.write("Streamlit version", st.__version__)
+
 df = pd.read_csv("USAHousing2.csv")
 import random
 random.seed(42)
