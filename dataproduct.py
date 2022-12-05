@@ -31,8 +31,6 @@ import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
 st.set_page_config(layout="wide", page_icon=":house:", page_title="Rent Prediction")
-import streamlit_theme as stt
-stt.set_theme({'primary': '#1b3388'})
 
 st.write("Streamlit version", st.__version__)
 st.set_option('deprecation.showPyplotGlobalUse', False)
