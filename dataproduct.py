@@ -31,6 +31,8 @@ import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
 st.set_page_config(layout="wide", page_icon=":house:", page_title="Rent Prediction")
+import altair as alt
+alt.value('#f63366')
 
 st.write("Streamlit version", st.__version__)
 st.set_option('deprecation.showPyplotGlobalUse', False)
