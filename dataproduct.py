@@ -15,9 +15,9 @@ from sklearn import metrics
 from sklearn.model_selection import cross_val_score 
 from sklearn.model_selection import KFold
 import statsmodels.formula.api as smf
-import statsmodels.stats.api as sms
-import statsmodels.api as sm
-from statsmodels.formula.api import ols
+#import statsmodels.stats.api as sms
+#import statsmodels.api as sm
+#from statsmodels.formula.api import ols
 from sklearn import datasets, linear_model
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error, make_scorer
