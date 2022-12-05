@@ -73,22 +73,6 @@ df=df[df["baths"]<= 3.5]
 #df= df[(df["long"]< -20) & (df['long'] > -110)] 
  
 def main_page():    
-    
-    
-        st.sidebar.write("Use the widgets to alter the graphs:")
-        chck = st.sidebar.checkbox("Use your theme colours on graphs", value=True) # get colours for graphs
-
-        # get colors from theme config file, or set the colours to altair standards
-        if chck:
-                primary_clr = st.get_option("theme.primaryColor")
-                txt_clr = st.get_option("theme.textColor")
-        # I want 3 colours to graph, so this is a red that matches the theme:
-        second_clr = "#d87c7c"
-        else:
-                primary_clr = '#4c78a8'
-                second_clr = '#f58517'
-                txt_clr = '#e45756'
-
     import base64
     def add_bg_from_local(image_file):
         with open(image_file, "rb") as image_file:
@@ -104,7 +88,7 @@ def main_page():
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('Christmas2.webp')    
+    add_bg_from_local('Christmas2.webp') 
     
     st.markdown("# Welcome to the Rent Predictor 🏘🎄")
     st.markdown("### In the sidebar to the left there are several pages that can take you through the machine learning side of the predictor.")
@@ -115,6 +99,20 @@ def main_page():
 
     st.markdown("# ENJOY!")
     st.sidebar.markdown("# Welcome!🎈❄️")
+    
+        st.sidebar.write("Use the widgets to alter the graphs:")
+        chck = st.sidebar.checkbox("Use your theme colours on graphs", value=True) # get colours for graphs
+
+        # get colors from theme config file, or set the colours to altair standards
+        if chck:
+            primary_clr = st.get_option("theme.primaryColor")
+            txt_clr = st.get_option("theme.textColor")
+            # I want 3 colours to graph, so this is a red that matches the theme:
+            second_clr = "#d87c7c"
+        else:
+            primary_clr = '#4c78a8'
+            second_clr = '#f58517'
+            txt_clr = '#e45756'
 
 
 def page2():
