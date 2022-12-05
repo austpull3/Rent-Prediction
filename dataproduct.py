@@ -311,7 +311,7 @@ df.fillna(0, inplace=True)
 df.isna().sum()
         '''
     st.code(code, language= 'python')
-   
+    from PIL import Image 
     image10 = Image.open('missingh.png')
     st.image(image10)
     
