@@ -32,6 +32,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 st.write("Streamlit version", st.__version__)
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 df = pd.read_csv("USAHousing2.csv")
 import random
