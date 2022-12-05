@@ -1,7 +1,7 @@
 
 import streamlit as st 
-CURRENT_THEME = "light"
-IS_DARK_THEME = False
+CURRENT_THEME = "dark"
+IS_DARK_THEME = True
 import pandas as pd
 import numpy as np
 import numpy as np
