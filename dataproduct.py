@@ -339,12 +339,6 @@ st.pyplot()
    
 st.write(sns.boxplot(x = 'baths', data = df))
 st.pyplot()
-   
-st.write(sns.boxplot(x = 'lat', data = df))
-st.pyplot()
-   
-st.write(sns.boxplot(x = 'long', data = df))
-st.pyplot()
          '''
     st.code(code, language= 'python')
     
@@ -393,12 +387,6 @@ st.write(sns.boxplot(x = 'beds', data = df))
 st.pyplot()
 df = df[df["baths"]<= 3.5]
 st.write(sns.boxplot(x = 'baths', data = df))
-st.pyplot()
-df= df[(df["lat"]< 52) & (df['lat'] > 22)]
-st.write(sns.boxplot(x = 'lat', data = df))
-st.pyplot()
-df= df[(df["long"]< -20) & (df['long'] > -110)]
-st.write(sns.boxplot(x = 'long', data = df))
 st.pyplot()
          '''
     st.code(code, language= 'python')
