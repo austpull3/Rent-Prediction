@@ -754,7 +754,6 @@ def page7():
     from sklearn import metrics
     from sklearn.model_selection import cross_val_score
     from sklearn.model_selection import KFold
-    import statsmodels.api as sm
     from sklearn.metrics import r2_score
     from sklearn.metrics import mean_squared_error, make_scorer
     from sklearn.linear_model import LinearRegression
