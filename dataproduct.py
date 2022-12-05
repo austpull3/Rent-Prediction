@@ -801,7 +801,7 @@ def page7():
     df["parking_options"]=le.fit_transform(df["parking_options"])
     df["type"]=le.fit_transform(df["type"])
     
-    df.drop("region", axis=1, inplace=True)
+    #df.drop("region", axis=1, inplace=True)
     
     
     df['bed_bath_total'] = df.apply(lambda x: x['beds'] + x['baths'], axis = 1)
