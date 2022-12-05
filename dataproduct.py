@@ -796,7 +796,7 @@ def page7():
     from sklearn.preprocessing import LabelEncoder
     le=LabelEncoder()
     df["state"]=le.fit_transform(df["state"])
-    df["region"]=le.fit_transform(df["region"])
+    #df["region"]=le.fit_transform(df["region"])
     df["laundry_options"]=le.fit_transform(df["laundry_options"])
     df["parking_options"]=le.fit_transform(df["parking_options"])
     df["type"]=le.fit_transform(df["type"])
