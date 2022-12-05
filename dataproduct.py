@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 from sklearn import metrics
 from sklearn.model_selection import cross_val_score 
 from sklearn.model_selection import KFold
-import statsmodels.formula.api as smf
+#import statsmodels.formula.api as smf
 #import statsmodels.stats.api as sms
 #import statsmodels.api as sm
 #from statsmodels.formula.api import ols
