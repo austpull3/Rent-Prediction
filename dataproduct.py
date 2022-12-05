@@ -62,9 +62,9 @@ df=df[df["beds"]<= 3]
 
 df=df[df["baths"]<= 3.5]
 
-df= df[(df["lat"]< 55) & (df['lat'] > 20)]
+#df= df[(df["lat"]< 55) & (df['lat'] > 20)]
 
-df= df[(df["long"]< -20) & (df['long'] > -110)] 
+#df= df[(df["long"]< -20) & (df['long'] > -110)] 
  
 def main_page():
     st.snow()
