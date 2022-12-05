@@ -418,11 +418,11 @@ fig.show()
     
     from PIL import Image 
     #st.sidebar.markdown("# Loading Data")
-    image31= Image.open('/Users/austinpullar/Desktop/correlation.png')
+    image31= Image.open('correlation.png')
     st.sidebar.image(image31)
     
     from PIL import Image 
-    image19= Image.open('/Users/austinpullar/Desktop/encode.png')
+    image19= Image.open('encode.png')
     st.image(image19)
     st.markdown("## Feature Correlation with Target ")
     code = ''' 
@@ -433,7 +433,7 @@ sns.heatmap(hm, annot = True, square = True, cmap = 'flare')
     st.code(code, language= 'python')
     
     
-    image20= Image.open('/Users/austinpullar/Desktop/heatmap.png')
+    image20= Image.open('heatmap.png')
     st.image(image20)
     
     code = '''
@@ -443,7 +443,7 @@ corr['price'].sort_values(ascending = False)
              '''
     st.code(code, language= 'python')
     
-    image21= Image.open('/Users/austinpullar/Desktop/corr.png')
+    image21= Image.open('corr.png')
     st.image(image21)
     
     
@@ -454,7 +454,7 @@ sns.regplot(data = df, x="sqfeet", y= "price",
 
              '''
     st.code(code, language= 'python')
-    image22= Image.open('/Users/austinpullar/Desktop/regplots.png')
+    image22= Image.open('regplots.png')
     st.image(image22)
     code = '''
 sns.regplot(data = df, x="baths", y= "price",
@@ -462,7 +462,7 @@ sns.regplot(data = df, x="baths", y= "price",
 
              '''
     st.code(code, language= 'python')
-    image50= Image.open('/Users/austinpullar/Desktop/regbath.png')
+    image50= Image.open('regbath.png')
     st.image(image50)
     code = '''
 sns.regplot(data = df, x="laundry_options", y= "price",
@@ -470,7 +470,7 @@ sns.regplot(data = df, x="laundry_options", y= "price",
 
              '''
     st.code(code, language= 'python')
-    image51= Image.open('/Users/austinpullar/Desktop/regl.png')
+    image51= Image.open('regl.png')
     st.image(image51)
 
 def page6():
@@ -478,7 +478,7 @@ def page6():
       
       from PIL import Image 
       #st.sidebar.markdown("# Loading Data")
-      image33 = Image.open('/Users/austinpullar/Desktop/ML.jpeg')
+      image33 = Image.open('ML.jpeg')
       st.sidebar.image(image33)
       
       tab, tab2, tab3 = st.tabs(["Model Creation Code", "Validation Code","Results"])
@@ -651,7 +651,7 @@ vif["VIF"] = [variance_inflation_factor(X.values, i)
 vif
 '''
           st.code(code, language = 'python')
-          image35= Image.open('/Users/austinpullar/Desktop/vif.png')
+          image35= Image.open('vif.png')
           st.image(image35)
           
           
@@ -669,7 +669,7 @@ plt.show()
 '''
           st.code(code, language = 'python')
            
-          image36= Image.open('/Users/austinpullar/Desktop/asump.png')
+          image36= Image.open('asump.png')
           st.image(image36)
           
           
@@ -680,7 +680,7 @@ plt.title("Normal Q-Q plot")
 plt.show()
 '''
           st.code(code, language = 'python')
-          image37= Image.open('/Users/austinpullar/Desktop/asump2.png')
+          image37= Image.open('asump2.png')
           st.image(image37)
           
           code = '''
@@ -693,7 +693,7 @@ plt.show()
 '''
           st.code(code, language = 'python')
           
-          image38= Image.open('/Users/austinpullar/Desktop/asump3.png')
+          image38= Image.open('asump3.png')
           st.image(image38)
           
           code = '''
@@ -723,11 +723,11 @@ def page7():
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('/Users/austinpullar/Desktop/Christmas2.webp')    
+    add_bg_from_local('Christmas2.webp')    
     
     from PIL import Image 
     #st.sidebar.markdown("# Loading Data")
-    image32 = Image.open('/Users/austinpullar/Desktop/forrent.jpeg')
+    image32 = Image.open('forrent.jpeg')
     st.sidebar.image(image32)
     
     st.header("Please select each of the following factors to discover the rent estimate:")
