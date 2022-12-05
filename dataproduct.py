@@ -66,9 +66,7 @@ df=df[df["baths"]<= 3.5]
 
 #df= df[(df["long"]< -20) & (df['long'] > -110)] 
  
-def main_page():
-    st.snow()
-    
+def main_page():    
     import base64
     def add_bg_from_local(image_file):
         with open(image_file, "rb") as image_file:
