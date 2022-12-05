@@ -32,6 +32,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 st.set_page_config(layout="wide", page_icon=":house:", page_title="Rent Prediction")
 color = st.color_picker("Pick a color", '#00f900')
+st.theme = color
 
 
 st.write("Streamlit version", st.__version__)
