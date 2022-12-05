@@ -47,7 +47,7 @@ df["laundry_options"] = df["laundry_options"].fillna(df["laundry_options"].mode(
 df.fillna(0, inplace=True)
 
 #Remove irrelevant features
-df.drop(columns = ["id", "url", "region_url", "image_url", "description"],axis = 1,inplace = True)
+#df.drop(columns = ["id", "url", "region_url", "image_url", "description"],axis = 1,inplace = True)
 
 
 #Fix dataset so that it does not include Zero for price and sqfeet
